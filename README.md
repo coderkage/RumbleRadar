@@ -65,15 +65,31 @@ nuanced opinions expressed within tweets, whereas ABSA enables a more granular a
 To extract the required sentiments of users on various aspects of the earthquake event, total 9 key aspects and the words related to them have been defined as followed:
 
 
-| Aspect             | Related Words                                  |
-|--------------------|------------------------------------------------|
-| Food               | "food", "hungry", "starving", "food shortage", "meal" |
-| Injury             | "injured", "injuries", "injury", "hurt", "wounded", "bleeding" |
-| Shelter            | "shelter", "housing", "homeless", "evacuation center", "temporary shelter" |
-| Death              | "death", "died", "dying", "die", "will die"    |
+| Aspect             | Related Words                                                                                |
+|--------------------|----------------------------------------------------------------------------------------------|
+| Food               | "food", "hungry", "starving", "food shortage", "meal"                                        |
+| Injury             | "injured", "injuries", "injury", "hurt", "wounded", "bleeding"                               |
+| Shelter            | "shelter", "housing", "homeless", "evacuation center", "temporary shelter"                   |
+| Death              | "death", "died", "dying", "die", "will die"                                                  |
 | Property Damage    | "damage", "destroyed", "ruined", "collapsed", "broken", "infrastructure", "roads", "bridges" |
-| Rescue Efforts     | "rescue", "rescued", "rescuing", "aid", "assistance", "help" |
-| Fear and Panic     | "fear", "panic", "terrified", "scared", "frightened", "trauma", "PTSD", "stress", "anxiety" |
-| Relief and Support | "relief", "support", "help", "assistance", "aid" |
-| Government Response| "government", "officials", "response", "relief efforts", "emergency services" |
+| Rescue Efforts     | "rescue", "rescued", "rescuing", "aid", "assistance", "help"                                 |
+| Fear and Panic     | "fear", "panic", "terrified", "scared", "frightened", "trauma", "PTSD", "stress", "anxiety"  |
+| Relief and Support | "relief", "support", "help", "assistance", "aid"                                             |
+| Government Response| "government", "officials", "response", "relief efforts", "emergency services"                |
+
+Using VADER sentiment analyzer, we go through each terms for each aspect to perform ABSA.
+![aspect : property damage](https://github.com/coderkage/RumbleRadar/blob/main/property.png)
+![aspect : rescue efforts](https://github.com/coderkage/RumbleRadar/blob/main/rescue.png)
+
+## Topic Modelling
+
+Twitter conversations during earthquake events can cover a wide range of topics, including eyewitness reports, safety information, damage assessments, and humanitarian efforts. Here, we perform topic modelling on Turkey, 2023 dataset using Latent Dirichlet Allocation (LDA). 
+
+![lda : 2 topics](https://github.com/coderkage/RumbleRadar/blob/main/lda.png)
+
+## Future Integrations
+
+Looking ahead, integrating real-time data streams from Twitter could enhance the depth and accuracy of earthquake response analysis. Furthermore, exploring advanced machine learning models and ensemble techniques for sentiment analysis and topic modeling may
+yield more nuanced insights from the Twitter data. Collaborating with social media platforms to access additional data sources and implementing interactive visualization tools for stakeholders could further improve the usability and impact of this analysis in future
+disaster management scenarios.
 
