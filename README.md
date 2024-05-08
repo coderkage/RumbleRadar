@@ -40,3 +40,5 @@ The [Haiti, 2010 dataset](https://github.com/Ryota-Kawamura/AI-for-Good-Speciali
 ## Graphical Representation & Variation Over Time
 
 Analyzing the pattern of tweets over time reveals fluctuations in public awareness and engagement with earthquake events. Also, visualization of different events in single time frame helps to analyze and compare the impact of the same. *datatimeline.py* file outputs a webapp which plots such different graphs of the datasets for better visualization and to understand the rate of tweets per day.
+
+![Screenshot of dataset comparision graph]([https://myoctocat.com/assets/images/base-octocat.svg](https://github.com/coderkage/RumbleRadar/blob/main/3Dcompare.png))
